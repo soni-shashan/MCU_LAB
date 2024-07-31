@@ -85,14 +85,18 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(330,310)" to="(330,340)"/>
     <wire from="(270,300)" to="(310,300)"/>
     <wire from="(210,270)" to="(310,270)"/>
-    <comp lib="6" loc="(480,278)" name="Text">
-      <a name="text" val="23CS042"/>
-      <a name="font" val="SansSerif bold 18"/>
-    </comp>
-    <comp lib="0" loc="(400,190)" name="Pin">
-      <a name="facing" val="south"/>
+    <comp lib="0" loc="(200,270)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="CIN"/>
+      <a name="label" val="B"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="1" loc="(260,280)" name="NOT Gate"/>
+    <comp lib="3" loc="(420,230)" name="Adder">
+      <a name="width" val="1"/>
+    </comp>
+    <comp lib="0" loc="(210,220)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
       <a name="labelfont" val="SansSerif bold 16"/>
     </comp>
     <comp lib="0" loc="(270,310)" name="Constant">
@@ -102,10 +106,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="text" val="1 BIT ARITHMATIC"/>
       <a name="font" val="SansSerif bold 18"/>
     </comp>
-    <comp lib="0" loc="(200,270)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="B"/>
-      <a name="labelfont" val="SansSerif bold 16"/>
+    <comp lib="0" loc="(420,290)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="COUT"/>
+      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(450,230)" name="Pin">
       <a name="facing" val="west"/>
@@ -113,25 +118,20 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="S"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="1" loc="(260,280)" name="NOT Gate"/>
     <comp lib="0" loc="(270,340)" name="Pin">
       <a name="width" val="2"/>
       <a name="tristate" val="false"/>
       <a name="label" val="S1S0"/>
     </comp>
-    <comp lib="0" loc="(210,220)" name="Pin">
+    <comp lib="6" loc="(480,278)" name="Text">
+      <a name="text" val="23CS042"/>
+      <a name="font" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="0" loc="(400,190)" name="Pin">
+      <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="A"/>
+      <a name="label" val="CIN"/>
       <a name="labelfont" val="SansSerif bold 16"/>
-    </comp>
-    <comp lib="3" loc="(420,230)" name="Adder">
-      <a name="width" val="1"/>
-    </comp>
-    <comp lib="0" loc="(420,290)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="COUT"/>
-      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(240,310)" name="Ground"/>
     <comp lib="2" loc="(350,290)" name="Multiplexer">
@@ -173,25 +173,16 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(470,330)" to="(550,330)"/>
     <wire from="(570,330)" to="(580,330)"/>
     <wire from="(250,220)" to="(250,280)"/>
-    <comp lib="0" loc="(200,220)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="BO"/>
-      <a name="labelfont" val="SansSerif bold 16"/>
-    </comp>
+    <comp lib="1" loc="(460,410)" name="NOT Gate"/>
     <comp lib="1" loc="(470,380)" name="XOR Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="0" loc="(250,220)" name="Pin">
-      <a name="facing" val="south"/>
+    <comp lib="0" loc="(570,430)" name="Pin">
+      <a name="width" val="2"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="A0"/>
+      <a name="label" val="S1S0"/>
       <a name="labelfont" val="SansSerif bold 16"/>
-    </comp>
-    <comp lib="1" loc="(470,290)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
     </comp>
     <comp lib="0" loc="(690,320)" name="Pin">
       <a name="facing" val="west"/>
@@ -208,20 +199,29 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="text" val="1  BIT LOGICAL"/>
       <a name="font" val="SansSerif bold 18"/>
     </comp>
-    <comp lib="0" loc="(570,430)" name="Pin">
-      <a name="width" val="2"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="S1S0"/>
-      <a name="labelfont" val="SansSerif bold 16"/>
+    <comp lib="6" loc="(340,261)" name="Text">
+      <a name="text" val="23CS042"/>
+      <a name="font" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="1" loc="(470,290)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
     </comp>
     <comp lib="1" loc="(470,330)" name="OR Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="1" loc="(460,410)" name="NOT Gate"/>
-    <comp lib="6" loc="(340,261)" name="Text">
-      <a name="text" val="23CS042"/>
-      <a name="font" val="SansSerif bold 18"/>
+    <comp lib="0" loc="(200,220)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="BO"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(250,220)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A0"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
     </comp>
   </circuit>
   <circuit name="8 BIT ALU">
@@ -560,40 +560,25 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(650,680)" to="(650,730)"/>
     <wire from="(670,900)" to="(680,900)"/>
     <wire from="(850,820)" to="(930,820)"/>
-    <comp lib="0" loc="(260,110)" name="Splitter">
+    <comp loc="(670,620)" name="1 BIT LOGICAL CIRCUIT"/>
+    <comp lib="0" loc="(940,80)" name="Pin">
       <a name="facing" val="south"/>
-      <a name="fanout" val="8"/>
-      <a name="incoming" val="8"/>
-    </comp>
-    <comp loc="(670,980)" name="1 BIT LOGICAL CIRCUIT"/>
-    <comp loc="(670,1100)" name="1 BIT ARITHMATIC"/>
-    <comp loc="(670,1440)" name="1 BIT ARITHMATIC"/>
-    <comp loc="(670,740)" name="1 BIT ARITHMATIC"/>
-    <comp lib="6" loc="(376,65)" name="Text">
-      <a name="text" val="A7A6A5A4A3A2A1A0"/>
-    </comp>
-    <comp lib="2" loc="(870,570)" name="Multiplexer">
-      <a name="select" val="2"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp loc="(670,240)" name="1 BIT LOGICAL CIRCUIT"/>
-    <comp lib="2" loc="(870,780)" name="Multiplexer">
-      <a name="select" val="2"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(590,90)" name="Splitter">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="0" loc="(540,50)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="fanout" val="4"/>
-      <a name="incoming" val="4"/>
-    </comp>
-    <comp lib="0" loc="(400,80)" name="Pin">
+      <a name="output" val="true"/>
       <a name="width" val="8"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="A"/>
+      <a name="label" val="S1"/>
+      <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="2" loc="(870,1140)" name="Multiplexer">
+      <a name="select" val="2"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(810,70)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="SHL"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp loc="(670,1320)" name="1 BIT LOGICAL CIRCUIT"/>
     <comp lib="0" loc="(940,100)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="fanout" val="8"/>
@@ -607,46 +592,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit6" val="1"/>
       <a name="bit7" val="0"/>
     </comp>
-    <comp lib="0" loc="(810,70)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="SHL"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="6" loc="(723,85)" name="Text">
-      <a name="text" val="23CS042"/>
-      <a name="font" val="SansSerif bold 18"/>
-    </comp>
     <comp lib="2" loc="(870,1480)" name="Multiplexer">
-      <a name="select" val="2"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(410,110)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="fanout" val="8"/>
-      <a name="incoming" val="8"/>
-    </comp>
-    <comp loc="(670,830)" name="1 BIT LOGICAL CIRCUIT"/>
-    <comp loc="(670,360)" name="1 BIT ARITHMATIC"/>
-    <comp lib="2" loc="(870,1140)" name="Multiplexer">
-      <a name="select" val="2"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(850,70)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="SHR"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp loc="(670,1320)" name="1 BIT LOGICAL CIRCUIT"/>
-    <comp lib="0" loc="(1080,70)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="COUT"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp loc="(670,1230)" name="1 BIT ARITHMATIC"/>
-    <comp lib="2" loc="(870,930)" name="Multiplexer">
       <a name="select" val="2"/>
       <a name="enable" val="false"/>
     </comp>
@@ -655,47 +601,23 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="label" val="SELECT"/>
     </comp>
-    <comp loc="(670,620)" name="1 BIT LOGICAL CIRCUIT"/>
-    <comp lib="6" loc="(194,166)" name="Text">
-      <a name="text" val="8 BIT ALU"/>
-      <a name="font" val="SansSerif bold 22"/>
+    <comp loc="(670,890)" name="1 BIT ARITHMATIC"/>
+    <comp loc="(670,450)" name="1 BIT LOGICAL CIRCUIT"/>
+    <comp lib="0" loc="(540,50)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
     </comp>
-    <comp loc="(670,530)" name="1 BIT ARITHMATIC"/>
-    <comp loc="(670,150)" name="1 BIT ARITHMATIC"/>
-    <comp loc="(670,1530)" name="1 BIT LOGICAL CIRCUIT"/>
+    <comp lib="2" loc="(870,1270)" name="Multiplexer">
+      <a name="select" val="2"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp loc="(670,830)" name="1 BIT LOGICAL CIRCUIT"/>
     <comp lib="2" loc="(870,400)" name="Multiplexer">
       <a name="select" val="2"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="0" loc="(570,110)" name="Splitter">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp loc="(670,890)" name="1 BIT ARITHMATIC"/>
-    <comp lib="2" loc="(870,190)" name="Multiplexer">
-      <a name="select" val="2"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp loc="(670,1190)" name="1 BIT LOGICAL CIRCUIT"/>
-    <comp lib="6" loc="(190,74)" name="Text">
-      <a name="text" val="B7B6B5B4B2B1B0"/>
-    </comp>
-    <comp lib="0" loc="(940,80)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="8"/>
-      <a name="label" val="S1"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(230,90)" name="Pin">
-      <a name="width" val="8"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="B"/>
-    </comp>
-    <comp loc="(670,450)" name="1 BIT LOGICAL CIRCUIT"/>
-    <comp lib="6" loc="(509,31)" name="Text">
-      <a name="text" val="S3S2S1S0"/>
-    </comp>
-    <comp lib="2" loc="(870,1270)" name="Multiplexer">
+    <comp lib="2" loc="(870,780)" name="Multiplexer">
       <a name="select" val="2"/>
       <a name="enable" val="false"/>
     </comp>
@@ -703,6 +625,84 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="label" val="CIN"/>
       <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="6" loc="(723,85)" name="Text">
+      <a name="text" val="23CS042"/>
+      <a name="font" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="6" loc="(509,31)" name="Text">
+      <a name="text" val="S3S2S1S0"/>
+    </comp>
+    <comp loc="(670,740)" name="1 BIT ARITHMATIC"/>
+    <comp loc="(670,1230)" name="1 BIT ARITHMATIC"/>
+    <comp lib="2" loc="(870,190)" name="Multiplexer">
+      <a name="select" val="2"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp loc="(670,980)" name="1 BIT LOGICAL CIRCUIT"/>
+    <comp loc="(670,1190)" name="1 BIT LOGICAL CIRCUIT"/>
+    <comp lib="0" loc="(1080,70)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="COUT"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="6" loc="(376,65)" name="Text">
+      <a name="text" val="A7A6A5A4A3A2A1A0"/>
+    </comp>
+    <comp lib="0" loc="(590,90)" name="Splitter">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(410,110)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="2" loc="(870,570)" name="Multiplexer">
+      <a name="select" val="2"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(870,930)" name="Multiplexer">
+      <a name="select" val="2"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(230,90)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="0" loc="(850,70)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="SHR"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp loc="(670,1440)" name="1 BIT ARITHMATIC"/>
+    <comp loc="(670,1100)" name="1 BIT ARITHMATIC"/>
+    <comp loc="(670,530)" name="1 BIT ARITHMATIC"/>
+    <comp lib="0" loc="(570,110)" name="Splitter">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp loc="(670,150)" name="1 BIT ARITHMATIC"/>
+    <comp loc="(670,240)" name="1 BIT LOGICAL CIRCUIT"/>
+    <comp lib="0" loc="(260,110)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp loc="(670,360)" name="1 BIT ARITHMATIC"/>
+    <comp lib="6" loc="(190,74)" name="Text">
+      <a name="text" val="B7B6B5B4B2B1B0"/>
+    </comp>
+    <comp loc="(670,1530)" name="1 BIT LOGICAL CIRCUIT"/>
+    <comp lib="0" loc="(400,80)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="6" loc="(194,166)" name="Text">
+      <a name="text" val="8 BIT ALU"/>
+      <a name="font" val="SansSerif bold 22"/>
     </comp>
   </circuit>
   <circuit name="16 BIT ALU">
@@ -761,22 +761,18 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(560,110)" to="(560,160)"/>
     <wire from="(520,170)" to="(520,230)"/>
     <wire from="(120,30)" to="(120,90)"/>
-    <comp lib="6" loc="(365,110)" name="Text">
-      <a name="text" val="23CS042"/>
-      <a name="font" val="SansSerif bold 18"/>
-    </comp>
-    <comp loc="(470,140)" name="8 BIT ALU"/>
-    <comp lib="0" loc="(260,40)" name="Pin">
-      <a name="width" val="4"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="SELECT"/>
-    </comp>
     <comp lib="0" loc="(110,150)" name="Pin">
       <a name="width" val="16"/>
       <a name="tristate" val="false"/>
       <a name="label" val="B"/>
     </comp>
-    <comp lib="0" loc="(160,90)" name="Splitter">
+    <comp lib="0" loc="(110,90)" name="Pin">
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp loc="(480,260)" name="8 BIT ALU"/>
+    <comp lib="0" loc="(160,150)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="incoming" val="16"/>
       <a name="bit1" val="0"/>
@@ -798,20 +794,74 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="6" loc="(462,313)" name="Text">
       <a name="text" val="BIT 8 TO 15"/>
     </comp>
+    <comp lib="0" loc="(500,260)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Cout"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(470,140)" name="8 BIT ALU"/>
+    <comp lib="0" loc="(380,50)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="SHL"/>
+    </comp>
+    <comp lib="6" loc="(443,190)" name="Text">
+      <a name="text" val="BIT 0 TO 7"/>
+    </comp>
+    <comp lib="6" loc="(365,110)" name="Text">
+      <a name="text" val="23CS042"/>
+      <a name="font" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="0" loc="(160,90)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="incoming" val="16"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="1"/>
+      <a name="bit9" val="1"/>
+      <a name="bit10" val="1"/>
+      <a name="bit11" val="1"/>
+      <a name="bit12" val="1"/>
+      <a name="bit13" val="1"/>
+      <a name="bit14" val="1"/>
+      <a name="bit15" val="1"/>
+    </comp>
+    <comp lib="0" loc="(600,150)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="incoming" val="16"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="1"/>
+      <a name="bit9" val="1"/>
+      <a name="bit10" val="1"/>
+      <a name="bit11" val="1"/>
+      <a name="bit12" val="1"/>
+      <a name="bit13" val="1"/>
+      <a name="bit14" val="1"/>
+      <a name="bit15" val="1"/>
+    </comp>
     <comp lib="0" loc="(390,320)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="SHR"/>
     </comp>
-    <comp lib="0" loc="(620,150)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="label" val="OUTPUT"/>
-      <a name="labelloc" val="east"/>
-    </comp>
     <comp lib="0" loc="(260,90)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="CIN"/>
+    </comp>
+    <comp lib="0" loc="(260,40)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="SELECT"/>
     </comp>
     <comp lib="0" loc="(130,30)" name="Splitter">
       <a name="facing" val="south"/>
@@ -833,62 +883,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit14" val="0"/>
       <a name="bit15" val="0"/>
     </comp>
-    <comp lib="0" loc="(110,90)" name="Pin">
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="A"/>
-    </comp>
-    <comp lib="0" loc="(600,150)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="incoming" val="16"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="1"/>
-      <a name="bit9" val="1"/>
-      <a name="bit10" val="1"/>
-      <a name="bit11" val="1"/>
-      <a name="bit12" val="1"/>
-      <a name="bit13" val="1"/>
-      <a name="bit14" val="1"/>
-      <a name="bit15" val="1"/>
-    </comp>
-    <comp lib="0" loc="(380,50)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="SHL"/>
-    </comp>
-    <comp loc="(480,260)" name="8 BIT ALU"/>
-    <comp lib="0" loc="(500,260)" name="Pin">
+    <comp lib="0" loc="(620,150)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="label" val="Cout"/>
+      <a name="width" val="16"/>
+      <a name="label" val="OUTPUT"/>
       <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="6" loc="(443,190)" name="Text">
-      <a name="text" val="BIT 0 TO 7"/>
-    </comp>
-    <comp lib="0" loc="(160,150)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="incoming" val="16"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="1"/>
-      <a name="bit9" val="1"/>
-      <a name="bit10" val="1"/>
-      <a name="bit11" val="1"/>
-      <a name="bit12" val="1"/>
-      <a name="bit13" val="1"/>
-      <a name="bit14" val="1"/>
-      <a name="bit15" val="1"/>
     </comp>
   </circuit>
   <circuit name="commonbus">
@@ -1145,58 +1145,20 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(700,210)" to="(710,210)"/>
     <wire from="(690,330)" to="(830,330)"/>
     <wire from="(690,410)" to="(830,410)"/>
-    <comp lib="0" loc="(290,400)" name="Pin">
-      <a name="width" val="2"/>
+    <comp lib="4" loc="(1170,320)" name="Register">
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(370,210)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="SELECT MUX A"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="2" loc="(300,50)" name="Multiplexer">
-      <a name="width" val="12"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(580,610)" name="Constant">
-      <a name="facing" val="west"/>
-      <a name="width" val="8"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="6" loc="(85,252)" name="Text">
-      <a name="text" val="BIT 1=&gt;INR"/>
-    </comp>
-    <comp lib="0" loc="(1110,390)" name="Splitter">
-      <a name="fanout" val="3"/>
-      <a name="incoming" val="3"/>
-    </comp>
-    <comp lib="0" loc="(670,470)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="CONTROL_IR"/>
-    </comp>
-    <comp lib="4" loc="(510,90)" name="RAM">
-      <a name="addrWidth" val="12"/>
-      <a name="dataWidth" val="16"/>
-      <a name="bus" val="separate"/>
+      <a name="label" val="SELECT RAM"/>
+      <a name="labelloc" val="south"/>
     </comp>
     <comp lib="0" loc="(670,310)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="label" val="CONTROL_DR"/>
     </comp>
-    <comp lib="0" loc="(230,80)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="SELECT_A"/>
-    </comp>
-    <comp lib="0" loc="(670,390)" name="Splitter">
-      <a name="fanout" val="3"/>
-      <a name="incoming" val="3"/>
-    </comp>
-    <comp lib="2" loc="(420,440)" name="Multiplexer">
-      <a name="select" val="2"/>
-      <a name="width" val="16"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(930,210)" name="Splitter">
-      <a name="facing" val="west"/>
+    <comp lib="0" loc="(230,200)" name="Splitter">
       <a name="incoming" val="16"/>
       <a name="bit1" val="0"/>
       <a name="bit2" val="0"/>
@@ -1213,84 +1175,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit13" val="1"/>
       <a name="bit14" val="1"/>
       <a name="bit15" val="1"/>
-    </comp>
-    <comp lib="4" loc="(1170,320)" name="Register">
-      <a name="width" val="16"/>
-    </comp>
-    <comp lib="0" loc="(660,550)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="CONTROL_TR"/>
-    </comp>
-    <comp lib="0" loc="(1020,450)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="SELECT"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="0" loc="(680,230)" name="Splitter">
-      <a name="fanout" val="3"/>
-      <a name="incoming" val="3"/>
-    </comp>
-    <comp lib="0" loc="(420,210)" name="Clock"/>
-    <comp lib="0" loc="(300,200)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="WRITE"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="0" loc="(700,150)" name="Splitter">
-      <a name="fanout" val="3"/>
-      <a name="incoming" val="3"/>
-    </comp>
-    <comp lib="0" loc="(260,630)" name="Splitter">
-      <a name="incoming" val="16"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="1"/>
-      <a name="bit9" val="1"/>
-      <a name="bit10" val="1"/>
-      <a name="bit11" val="1"/>
-      <a name="bit12" val="1"/>
-      <a name="bit13" val="1"/>
-      <a name="bit14" val="1"/>
-      <a name="bit15" val="1"/>
-    </comp>
-    <comp lib="0" loc="(460,200)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="READ"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="4" loc="(840,380)" name="Counter">
-      <a name="width" val="16"/>
-      <a name="max" val="0xffff"/>
-      <a name="label" val="AC"/>
-    </comp>
-    <comp lib="0" loc="(910,150)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(170,150)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="SELECT_D"/>
-    </comp>
-    <comp loc="(530,380)" name="16 BIT ALU"/>
-    <comp lib="4" loc="(840,140)" name="Counter">
-      <a name="width" val="12"/>
-      <a name="max" val="0xfff"/>
-      <a name="label" val="AR"/>
-    </comp>
-    <comp lib="0" loc="(880,70)" name="Clock">
-      <a name="label" val="SYSTEM_CLK"/>
-    </comp>
-    <comp lib="0" loc="(910,230)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0x0"/>
     </comp>
     <comp lib="0" loc="(940,130)" name="Splitter">
       <a name="facing" val="west"/>
@@ -1311,17 +1195,208 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit14" val="1"/>
       <a name="bit15" val="1"/>
     </comp>
+    <comp lib="2" loc="(300,110)" name="Multiplexer">
+      <a name="width" val="16"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1110,390)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="CONTROL_CB"/>
+    </comp>
+    <comp lib="0" loc="(700,150)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="CONTROL_AR"/>
+    </comp>
+    <comp lib="0" loc="(1110,390)" name="Splitter">
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
+    <comp lib="0" loc="(300,200)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="WRITE"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="0" loc="(880,70)" name="Clock">
+      <a name="label" val="SYSTEM_CLK"/>
+    </comp>
+    <comp lib="6" loc="(95,272)" name="Text">
+      <a name="text" val="BIT 2=&gt;CLEAR"/>
+    </comp>
+    <comp lib="0" loc="(1130,420)" name="Clock">
+      <a name="label" val="CB_CLK"/>
+    </comp>
+    <comp lib="0" loc="(610,600)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="INPR"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(110,40)" name="Pin">
+      <a name="width" val="12"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ADDRESS"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(660,550)" name="Splitter">
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
+    <comp lib="2" loc="(420,440)" name="Multiplexer">
+      <a name="select" val="2"/>
+      <a name="width" val="16"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(910,230)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(230,80)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="SELECT_A"/>
+    </comp>
+    <comp lib="0" loc="(290,470)" name="Pin">
+      <a name="width" val="2"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="SELECT MUX B"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(670,470)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="CONTROL_IR"/>
+    </comp>
+    <comp lib="4" loc="(840,460)" name="Register">
+      <a name="width" val="16"/>
+      <a name="label" val="IR"/>
+    </comp>
+    <comp lib="4" loc="(510,90)" name="RAM">
+      <a name="addrWidth" val="12"/>
+      <a name="dataWidth" val="16"/>
+      <a name="bus" val="separate"/>
+    </comp>
+    <comp lib="0" loc="(670,470)" name="Splitter">
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
+    <comp lib="0" loc="(660,550)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="CONTROL_TR"/>
+    </comp>
+    <comp lib="0" loc="(110,110)" name="Pin">
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="DATA"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="4" loc="(840,630)" name="Register">
+      <a name="label" val="OUTR"/>
+    </comp>
+    <comp lib="4" loc="(840,380)" name="Counter">
+      <a name="width" val="16"/>
+      <a name="max" val="0xffff"/>
+      <a name="label" val="AC"/>
+    </comp>
+    <comp lib="0" loc="(1260,320)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="label" val="CB O/P"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(460,510)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="SHR"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(530,380)" name="16 BIT ALU"/>
+    <comp lib="0" loc="(290,400)" name="Pin">
+      <a name="width" val="2"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="SELECT MUX A"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(670,650)" name="Splitter">
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
+    <comp lib="2" loc="(1070,320)" name="Multiplexer">
+      <a name="select" val="3"/>
+      <a name="width" val="16"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(420,370)" name="Multiplexer">
+      <a name="select" val="2"/>
+      <a name="width" val="16"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(460,470)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="SHL"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="4" loc="(840,300)" name="Counter">
+      <a name="width" val="16"/>
+      <a name="max" val="0xffff"/>
+      <a name="label" val="DR"/>
+    </comp>
+    <comp lib="0" loc="(420,210)" name="Clock"/>
+    <comp lib="0" loc="(700,150)" name="Splitter">
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
+    <comp lib="6" loc="(85,252)" name="Text">
+      <a name="text" val="BIT 1=&gt;INR"/>
+    </comp>
     <comp lib="6" loc="(84,220)" name="Text">
       <a name="text" val="CONTROL "/>
     </comp>
-    <comp lib="4" loc="(840,220)" name="Counter">
-      <a name="width" val="12"/>
-      <a name="max" val="0xfff"/>
-      <a name="label" val="PC"/>
-    </comp>
-    <comp lib="0" loc="(370,210)" name="Pin">
+    <comp lib="0" loc="(670,650)" name="Pin">
+      <a name="width" val="3"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="SELECT RAM"/>
+      <a name="label" val="CONTROL_OUTR"/>
+    </comp>
+    <comp lib="6" loc="(92,236)" name="Text">
+      <a name="text" val="BIT 0=&gt;LOAD"/>
+    </comp>
+    <comp lib="0" loc="(910,150)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(580,610)" name="Constant">
+      <a name="facing" val="west"/>
+      <a name="width" val="8"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="4" loc="(840,540)" name="Counter">
+      <a name="width" val="16"/>
+      <a name="max" val="0xffff"/>
+      <a name="label" val="TR"/>
+    </comp>
+    <comp lib="0" loc="(680,230)" name="Splitter">
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
+    <comp lib="0" loc="(670,390)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="CONTROL_AC"/>
+    </comp>
+    <comp lib="0" loc="(580,420)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="E"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(1020,450)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="SELECT"/>
       <a name="labelloc" val="south"/>
     </comp>
     <comp lib="0" loc="(450,430)" name="Pin">
@@ -1329,42 +1404,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="label" val="Cin"/>
       <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="2" loc="(300,110)" name="Multiplexer">
-      <a name="width" val="16"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(480,340)" name="Pin">
-      <a name="width" val="4"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="SELECT ALU"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(230,200)" name="Splitter">
-      <a name="incoming" val="16"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="1"/>
-      <a name="bit13" val="1"/>
-      <a name="bit14" val="1"/>
-      <a name="bit15" val="1"/>
-    </comp>
-    <comp lib="0" loc="(670,390)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="CONTROL_AC"/>
-    </comp>
-    <comp lib="6" loc="(95,272)" name="Text">
-      <a name="text" val="BIT 2=&gt;CLEAR"/>
     </comp>
     <comp lib="0" loc="(520,620)" name="Splitter">
       <a name="incoming" val="16"/>
@@ -1384,41 +1423,34 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit14" val="1"/>
       <a name="bit15" val="1"/>
     </comp>
-    <comp lib="0" loc="(670,650)" name="Splitter">
-      <a name="fanout" val="3"/>
-      <a name="incoming" val="3"/>
-    </comp>
-    <comp lib="0" loc="(670,650)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="CONTROL_OUTR"/>
-    </comp>
-    <comp lib="6" loc="(92,236)" name="Text">
-      <a name="text" val="BIT 0=&gt;LOAD"/>
-    </comp>
-    <comp lib="2" loc="(420,370)" name="Multiplexer">
-      <a name="select" val="2"/>
-      <a name="width" val="16"/>
+    <comp lib="2" loc="(300,50)" name="Multiplexer">
+      <a name="width" val="12"/>
       <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(610,600)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="width" val="8"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="INPR"/>
-      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(670,310)" name="Splitter">
       <a name="fanout" val="3"/>
       <a name="incoming" val="3"/>
     </comp>
-    <comp lib="0" loc="(660,550)" name="Splitter">
+    <comp lib="4" loc="(840,220)" name="Counter">
+      <a name="width" val="12"/>
+      <a name="max" val="0xfff"/>
+      <a name="label" val="PC"/>
+    </comp>
+    <comp lib="0" loc="(670,390)" name="Splitter">
       <a name="fanout" val="3"/>
       <a name="incoming" val="3"/>
     </comp>
-    <comp lib="0" loc="(670,470)" name="Splitter">
-      <a name="fanout" val="3"/>
-      <a name="incoming" val="3"/>
+    <comp lib="0" loc="(460,200)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="READ"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="0" loc="(480,340)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="SELECT ALU"/>
+      <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(520,160)" name="Pin">
       <a name="facing" val="west"/>
@@ -1426,88 +1458,56 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="CLR"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(1110,390)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="CONTROL_CB"/>
+    <comp lib="0" loc="(260,630)" name="Splitter">
+      <a name="incoming" val="16"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="1"/>
+      <a name="bit9" val="1"/>
+      <a name="bit10" val="1"/>
+      <a name="bit11" val="1"/>
+      <a name="bit12" val="1"/>
+      <a name="bit13" val="1"/>
+      <a name="bit14" val="1"/>
+      <a name="bit15" val="1"/>
     </comp>
-    <comp lib="4" loc="(840,540)" name="Counter">
-      <a name="width" val="16"/>
-      <a name="max" val="0xffff"/>
-      <a name="label" val="TR"/>
-    </comp>
-    <comp lib="0" loc="(290,470)" name="Pin">
-      <a name="width" val="2"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="SELECT MUX B"/>
-      <a name="labelloc" val="north"/>
+    <comp lib="0" loc="(930,210)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="incoming" val="16"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="1"/>
+      <a name="bit13" val="1"/>
+      <a name="bit14" val="1"/>
+      <a name="bit15" val="1"/>
     </comp>
     <comp lib="0" loc="(680,230)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="label" val="CONTROL_PC"/>
     </comp>
-    <comp lib="0" loc="(1260,320)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="label" val="CB O/P"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(460,510)" name="Pin">
-      <a name="facing" val="north"/>
+    <comp lib="0" loc="(170,150)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="SHR"/>
-      <a name="labelloc" val="east"/>
+      <a name="label" val="SELECT_D"/>
     </comp>
-    <comp lib="0" loc="(580,420)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="E"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(1130,420)" name="Clock">
-      <a name="label" val="CB_CLK"/>
-    </comp>
-    <comp lib="0" loc="(700,150)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="CONTROL_AR"/>
-    </comp>
-    <comp lib="4" loc="(840,630)" name="Register">
-      <a name="label" val="OUTR"/>
-    </comp>
-    <comp lib="0" loc="(460,470)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="SHL"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="2" loc="(1070,320)" name="Multiplexer">
-      <a name="select" val="3"/>
-      <a name="width" val="16"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(110,40)" name="Pin">
+    <comp lib="4" loc="(840,140)" name="Counter">
       <a name="width" val="12"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ADDRESS"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="4" loc="(840,460)" name="Register">
-      <a name="width" val="16"/>
-      <a name="label" val="IR"/>
-    </comp>
-    <comp lib="0" loc="(110,110)" name="Pin">
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="DATA"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="4" loc="(840,300)" name="Counter">
-      <a name="width" val="16"/>
-      <a name="max" val="0xffff"/>
-      <a name="label" val="DR"/>
+      <a name="max" val="0xfff"/>
+      <a name="label" val="AR"/>
     </comp>
   </circuit>
 </project>
